@@ -1,0 +1,157 @@
+.left-aligned {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.right-aligned {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.h-split {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.h-split>* {
+  flex: 1;
+}
+
+
+.h-center {
+  align-items: center;
+}
+
+.v-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer {
+  font-size: small;
+}
+
+#title>div {
+  backdrop-filter: blur(8px) grayscale(100%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.blurry-banner {
+  width: 100%;
+  backdrop-filter: blur(8px) grayscale(100%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+}
+
+.img-shadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.code-small {
+  font-size: small !important;
+  line-height: normal !important;
+}
+
+.h-split-code>:first-child {
+  float: left;
+  width: 49%;
+  overflow-y: hidden;
+}
+
+.h-split-code>:last-child {
+  float: right;
+  width: 49%;
+  overflow-y: hidden;
+}
+
+.low-height>* {
+  height: 200px;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-image>:first-child {
+  float: left;
+  width: 45%;
+}
+
+.text-image>:last-child {
+  float: right;
+  width: 50%;
+  max-height: 400px;
+}
+
+.img-small {
+  height: 300px;
+}
+
+.iframe-small {
+  width: 1000px;
+  height: 300px;
+}
+
+.code-wide {
+  width: 700px !important;
+}
+
+.code-narrow {
+  width: 400px !important;
+}
+
+.list-narrow {
+  width: 700px;
+  font-size: x-large;
+}
+
+.reveal section a.email {
+  background-image: url("./img/mail-logo.png");
+  background-position: left 0.55em;
+}
+
+.reveal section a.github {
+  background-image: url("./img/github-logo.png");
+}
+
+.reveal section a.url {
+  background-image: url("./img/url-logo.png");
+}
+
+.reveal section a.npm {
+  background-image: url("./img/npm-logo.svg");
+  background-position: left 0.55em;
+}
+
+.reveal section a.twitter {
+  background-image: url("./img/twitter-logo.png");
+}
+
+.reveal section div.split-info {
+  margin: 5px;
+  clear: both;
+}
+
+.reveal section div.split-info>:first-child {
+  float: left;
+}
+
+.reveal section div.split-info>:last-child {
+  float: right;
+}
+
+.reveal section a.twitter,
+.reveal section a.github,
+.reveal section a.email,
+.reveal section a.npm,
+.reveal section a.url {
+  display: inline;
+  padding-left: 1.2em;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 1.0em;
+}

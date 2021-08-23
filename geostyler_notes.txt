@@ -1,0 +1,55 @@
+News from GeoStyler
+
+- what is geostyler
+  - what is it NOT - GeoStyler is NOT an app, its a library (integrate it into your apps)
+  - parser concept
+  - ui concept
+  - translations
+  - file-to-tile translations konzeptionell
+  - old workflow: qgis/* -> export sld -> geoserver
+
+- Usage in applications
+  - bismap (alter screenshot) steffi klären
+  - bfs (testsystem)
+  - shogun (shogun.terrestris.de)
+  - geoportal koblenz (https://geoportal.koblenz.de/) -- anna fragen
+
+- news regarding UI
+  - Chinese translations
+  - Composition Context
+  - (clean) PreviewMap
+  - Support for RasterSymbolizers
+
+- news regarding Parsers
+  - mapfile parser -> see other talk
+  - typeguards for better dev experience
+  - sld parser
+    - SLD 1.0 vs SLD 1.1
+    - ttf:// support
+
+- new Projects
+  - geostyler-cli
+  - geostyler rest api
+  - example: cli-conversion vs on-the-fly conversion
+  - !!! Improvements on GeoServer extension
+
+- news regarding community
+  - OSGeo Community Project
+  - github organisation
+  - Number of contributors
+  - Website, etc.
+  - Tutorials
+  - Monthlies
+
+- what's next
+  - more styling formats, e.g. arcGIS? ongoing discussion
+  - support of expressions
+  - better label templating
+  - window-less layout -> more responsiveness
+  - qgis plugin?
+  - Code Sprint
+
+- limitations
+  - functions
+
+- references to other talks

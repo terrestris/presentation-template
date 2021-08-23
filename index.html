@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./img/logo.svg">
+
+		<title>My awesome title</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+		<link rel="stylesheet" href="terrestris.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <!-- Title slide -->
+        <section id="title"
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 85%">
+          <div class="r-stretch fragment">
+            <h1>My awesome title</h1>
+            <br />
+            <p>
+              <small>Author, Company</small> <br />
+              <small>Author 2, Company</small> <br />
+            </p>
+            <hr />
+            <p>
+              <small style="text-shadow: 0px 0px 2px #ffffff;">FOSS4G 2021, Buenos Aires, Argentina</small>
+            </p>
+          </div>
+        </section>
+
+        <!-- Author Info -->
+        <section id="author-author-name">
+          <h2>Author Name</h2>
+          <div class="split-info">
+            <div class="part" style="width:35%">
+              <img src="./img/js.jpeg" class="plain" width="200"/><br />
+              <small>
+                <a class="email" href="mailto:foo@example.com">foo@example.com</a><br />
+                <a class="github" href="https://github.com/foo/">@foo</a><br />
+              </small><br />
+            </div>
+            <div class="part" style="width:60%">
+              <div class="enumeration">
+                <ul>
+                  <li>Some info</li>
+                  <li>Some other info</li>
+                  <li>Some other info</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </section>
+
+
+        <!-- TABLE OF CONTENTS -->
+        <section id="toc"
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Contents</h2>
+          <div class="r-stretch v-center h-center">
+            <ol>
+              <li>Content 1</li>
+              <li>Content 2</li>
+              <li>Content 3</li>
+            </ol>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Heading with bullet points -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Chapter one</h2>
+          <div class="r-stretch v-center h-center">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+            </ul>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Stacked images and badge -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Stacked images and badge</h2>
+          <span>Press right arrow to see changing content</span>
+          <div class="r-stretch r-stack">
+            <img class="img-shadow" src="./img/geostyler-demo.png" />
+            <img class="fragment img-shadow" src="./img/geoportal_koblenz.png" />
+            <img class="fragment img-shadow" src="./img/bismap.png" />
+            <span class="fragment fade-in-then-out blurry-banner">GeoStyler is NOT an application</span><br />
+            <span class="fragment blurry-banner">GeoStyler is a LIBRARY that can  be integrated into your own application</span>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Title, subtitle, image -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Title</h2>
+          <span>subtitle, image below</span>
+          <div class="r-stretch h-center v-center">
+            <img src="./img/parser.svg" />
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Graphic on top, split code below -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Title</h2>
+          <span>subtitle, image and split code below</span>
+          <div class="r-stretch">
+            <img src="./img/sld_parsing.svg" />
+            <div class="fragment h-split-code low-height">
+              <pre class="code-small"><code data-trim>
+                <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                  <StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <NamedLayer>
+                      <Name>Demo Style</Name>
+                      <UserStyle>
+                        <Name>Demo Style</Name>
+                        <Title>Demo Style</Title>
+                        <FeatureTypeStyle>
+                          <Rule>
+                            <Name>Rule 1</Name>
+                            <PointSymbolizer>
+                              <Graphic>
+                                <Mark>
+                                  <WellKnownName>circle</WellKnownName>
+                                </Mark>
+                              </Graphic>
+                            </PointSymbolizer>
+                          </Rule>
+                        </FeatureTypeStyle>
+                      </UserStyle>
+                    </NamedLayer>
+                  </StyledLayerDescriptor>
+              </code></pre>
+              <pre class="code-small"><code data-trim>
+                {
+                  "name": "Demo Style",
+                  "rules": [
+                    {
+                      "name": "Rule 1",
+                      "symbolizers": [
+                        {
+                          "kind": "Mark",
+                          "wellKnownName": "circle"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              </code></pre>
+            </div>
+          </div>
+          <footer>
+            <span>News from GeoStyler, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Chapter Title -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <div class="r-stretch v-center h-center">
+            <h2>Chapter Title</h2>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Text left, image right -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Text left, image right</h2>
+          <div class="r-stretch r-stack">
+            <div class="text-image">
+              <div>
+                <h4>Text</h4>
+                <span class="r-fit-text">some content, image right</span>
+              </div>
+              <img class="img-shadow" src="./img/geostyler-rule-chinese.png" />
+            </div>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Text left, image right, stacked -->
+        <section
+          data-background-image="./img/logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Text left, image right</h2>
+          <div class="r-stretch r-stack">
+            <div class="fragment fade-out text-image">
+              <div>
+                <h4>Stacked</h4>
+                <span class="r-fit-text">Right arrow to change content</span>
+              </div>
+              <img class="img-shadow" src="./img/geostyler-rule-chinese.png" />
+            </div>
+            <div class="fragment fade-in-then-out text-image">
+              <div>
+                <h4>Some</h4>
+                <span>other content</span>
+              </div>
+              <img class="img-shadow" src="./img/previewmap.png" />
+            </div>
+            <div class="fragment fade-in-then-out text-image">
+              <div>
+                <h4>Again</h4>
+                <span>Other content</span>
+              </div>
+              <img class="img-shadow" src="./img/rastersymbolizer.png" />
+            </div>
+            <div class="fragment fade-in-then-out">
+              <div>
+                <h4>Code</h4>
+                <span>Can also be shown</span>
+              </div>
+              <small>See <a href="">some reference</a></small>
+              <pre class="code-small"><code data-trim>
+                LAYER
+                  NAME "point_simple_point"
+                  TYPE POINT
+                  DATA "../shapes/points.shp"
+                  EXTENT -180 -90 180 90
+                  METADATA
+                    "wms_title" "point_simple_point"
+                    "wms_srs" "EPSG:4326"    
+                  END
+                  CLASS
+                    STYLE
+                      SYMBOL "circle"
+                      COLOR 0 255 0
+                      SIZE 15
+                    END
+                  END
+                END
+              </code></pre>
+              <small>some info, e.g. related talks</small><br />
+            </div>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Centered content, stacked -->
+        <section
+          data-background-image="./img/geostyler_logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+          data-transition="slide-in none"
+        >
+          <h2>Centered Content, Stacked</h2>
+          <div class="r-stretch r-stack">
+            <div class="fragment fade-out">
+              <h4>Some content header</h4>
+              <span>see videos on next slide</span>
+              <pre><code data-trim class="language-bash">
+                maybe put some code here
+              </code></pre>
+              <small>See <a href="">example.com</a></small>
+            </div>
+            <div class="fragment fade-in-then-out">
+              <h4>Video Content</h4>
+              <video src="./img/geostyler-cli.mkv" data-autoplay></video>
+            </div>
+          </div>
+          <footer>
+            <span>News from GeoStyler, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Very Big Image -->
+        <section
+          data-background-image="./img/geostyler_logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+          data-transition="none slide-out"
+        >
+          <div class="r-stretch v-center h-center">
+            <img class="img-shadow" src="./img/geoserver.png" />
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Text with logo, embeeded website -->
+        <section
+          data-background-image="./img/geostyler_logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <h2>Text with logo & website</h2>
+          <div class="r-stretch r-stack">
+            <div class="fragment fade-out">
+              <h4>Some nice subtitle</h4>
+              <span>See website on next slide</span><br />
+              <img src="./img/osgeo.svg" /><br />
+              <small>See <a href="">example.com</a></small>
+            </div>
+            <div class="fragment fade-in-then-out">
+              <h4>Embedded website</h4>
+              <span>Some additional info</span><br />
+              <small>See <a href="">example.com</a></small><br />
+              <iframe class="iframe-small img-shadow" src="https://geostyler.org" scrolling="no"></iframe>
+            </div>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Thank you for your attention -->
+        <section
+          data-background-image="./img/geostyler_logo.svg"
+          data-background-size="auto 4%"
+          data-background-position="bottom 10px left 10px"
+        >
+          <div class="r-stretch v-center h-center">
+            <div>
+              <h2>Thank you for your attention</h2><br />
+              <small>and enjoy FOSS4G 2021</small>
+            </div>
+          </div>
+          <footer>
+            <span>My awesome title, FOSS4G 2021</span>
+          </footer>
+        </section>
+
+        <!-- Imprint -->
+        <section id="imprint">
+          <h2>Imprint</h2>
+          <h4>Authors</h4>
+
+          <div style="width: 45%; float: left;">
+            <address style="text-align: left">
+              <strong>Author 1</strong><br />
+              <span style="font-size: smaller;">
+                terrestris GmbH &amp; Co. KG<br />
+                K&ouml;lnstr. 99, 53111 Bonn<br />
+                Germany<br />
+                foo@terrestris.de
+              </span>
+            </address>
+          </div>
+          <div style="width: 45%; float: right;">
+            <address style="text-align: right">
+              <strong>Author 2</strong><br />
+              <span style="font-size: smaller;">
+                terrestris GmbH &amp; Co. KG<br />
+                K&ouml;lnstr. 99, 53111 Bonn<br />
+                Germany<br />
+                bar@terrestris.de
+              </span>
+            </address>
+          </div>
+          <h4 style="clear:both;">License</h4>
+          <p id="license">
+            <small>
+              Slides are published under <a
+              href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+	      license.<br />
+              <a href="https://readable/link/to/slides/">https://readable/link/to/slides/</a><br />
+              <a href="https://link/to/pdf">PDF-Version</a>,
+              <a href="https://link/to/repository">git repository</a>
+            </small>
+          </p>
+          <p>
+          </p>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+        controlsTutorial: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
